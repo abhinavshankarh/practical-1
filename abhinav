@@ -1,0 +1,49 @@
+//4 function Calculator
+//Done by Abhinav Shankar H (RA2111003010774)
+#include <stdio.h>
+void main() {
+
+  char op;
+  double a, b;
+  printf("Operators :\n\na)Addition\nb)Subtraction\nc)Multiplication\nd)Division\n\n");
+  printf("Select the Operator :");
+  scanf("%c",&op);
+  printf("Enter two Numbers :");
+  scanf("%lf %lf",&a,&b);
+  
+  switch (op)
+  {
+      case 'a':
+         printf("%lf",a+b);
+         break;
+      
+      case 'b':
+         printf("%lf",a-b);
+         break;
+    
+      case 'c':
+         printf("%lf",a*b);
+         break;
+        
+      case 'd':
+         printf("%lf",a/b);
+         break;
+         
+      default:
+         printf("Error!");
+         break;
+      
+  }
+}
+/* OUTPUT 
+Operators :
+
+a)Addition
+b)Subtraction
+c)Multiplication
+d)Division
+
+Select the Operator :a
+Enter two Numbers :600
+200
+800.000000 */
